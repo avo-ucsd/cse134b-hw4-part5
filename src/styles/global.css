@@ -122,5 +122,9 @@ footer {
 
     p {
         text-align: right;
+        a {
+            color: var(--color-text, #fdfdfd);
+            text-decoration: none;
+        }
     }
 }
