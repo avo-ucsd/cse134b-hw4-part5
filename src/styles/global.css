@@ -7,12 +7,17 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 header {
@@ -49,6 +54,14 @@ header {
 main {
     grid-column: 2;
     grid-row: 2;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
 }
 
 footer {
@@ -59,6 +72,7 @@ footer {
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: right;
+    margin-top: 2rem;
 
     color: var(--color-text, #fdfdfd);
     background: var(--color-accent, #1f1f1f);
