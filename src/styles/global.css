@@ -25,7 +25,6 @@ header {
     grid-row: 1;
 
     background: var(--color-accent, #1f1f1f);
-    border-radius: 0 0 2rem 2rem;
     padding: 1.5rem 5rem;
     margin-bottom: 2rem;
 
@@ -38,6 +37,7 @@ header {
         display: flex;
         gap: 2rem;
         list-style: none;
+        justify-content: end;
         
         a {
             color: var(--color-text, #fdfdfd);
@@ -54,4 +54,22 @@ main {
 footer {
     grid-column: 2;
     grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: right;
+
+    color: var(--color-text, #fdfdfd);
+    background: var(--color-accent, #1f1f1f);
+    padding: 1.5rem 5rem;
+
+    h1 > a {
+        color: var(--color-text, #fdfdfd);
+        text-decoration: none;
+    }
+
+    p {
+        text-align: right;
+    }
 }
