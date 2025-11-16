@@ -1,0 +1,24 @@
+:root {
+    --color-accent: #1f1f1f;
+    --color-text: #fdfdfd;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: var(--color-text, #fdfdfd);
+    background: var(--color-accent, #1f1f1f);
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    nav > ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        
+        a {
+            color: var(--color-text, #fdfdfd);
+            text-decoration: none;
+        }
+    }
+}
